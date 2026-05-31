@@ -70,11 +70,10 @@
     </div>
   </header>
   <main>
-    Valitse jokaiseen kysymykseen paras vaihtoehto. Saat suositellun 9R‑strategian ja voit arvioida investoinnin kannattavuuden.</p>
-<p class="sub">Vastaa kysymyksiin nykyisen liiketoimintasi näkökulmasta. Jos yritystä ei ole vielä perustettu, vastaa suunnitellun liiketoimintaidean näkökulmasta.</p>
-<p class="sub">Kyselyn avulla tunnistetaan, mikä kiertotalouden 9R-strategia soveltuu parhaiten tarkasteltavaan tuotteeseen, palveluun tai liiketoimintamalliin. Strategiat etenevät arvon säilyttämisestä materiaalien hyödyntämiseen: esimerkiksi käytöstä luopuminen (R0), käytön tehostaminen (R1), vähentäminen (R2), uudelleenkäyttö (R3), korjaaminen (R4), kunnostaminen (R5), uudelleenvalmistus (R6), uusiokäyttö (R7), kierrätys (R8) ja energian talteenotto (R9).</p>
-<p class="sub">Valitse jokaiseen kysymykseen parhaiten tilanteeseesi sopiva vaihtoehto. Lopuksi saat suositellun 9R-strategian sekä arvion ratkaisun liiketoiminnallisesta ja taloudellisesta potentiaalista.</p>
-<p class="sub">Mikäli pohdit mikä 9R-strategia on, niin klikkaa tästä <a href="https://www.thinglink.com/scene/2090408418832548517">infolaatikkoon</a>.</p> 
+<p>Vastaa kysymyksiin nykyisen liiketoimintasi näkökulmasta. Jos yritystä ei ole vielä perustettu, vastaa suunnitellun liiketoimintaidean näkökulmasta.</p>
+<p>Kyselyn avulla tunnistetaan, mikä kiertotalouden 9R-strategia soveltuu parhaiten tarkasteltavaan tuotteeseen, palveluun tai liiketoimintamalliin. Strategiat etenevät arvon säilyttämisestä materiaalien hyödyntämiseen: esimerkiksi käytöstä luopuminen (R0 - Refuse), käytön tehostaminen (R1 - Rethink), vähentäminen (R2 - Reduce), uudelleenkäyttö (R3 - Reuse), korjaaminen (R4 - Repair), kunnostaminen (R5 - Refurbish), uudelleenvalmistus (R6 - Remanufacture), uusiokäyttö (R7 - Repurpose), kierrätys (R8 - Recycle) ja energian talteenotto (R9 - Recover).</p>
+<p>Valitse jokaiseen kysymykseen parhaiten tilanteeseesi sopiva vaihtoehto. Lopuksi saat suositellun 9R-strategian sekä arvion ratkaisun liiketoiminnallisesta ja taloudellisesta potentiaalista.</p>
+<p>Mikäli pohdit mikä 9R-strategia on, niin klikkaa <a href="https://www.thinglink.com/scene/2090408418832548517" target="_blank">tästä määrittelyihin</a>.</p> 
     <div id="quiz"></div>
 
     <div class="actions">
@@ -176,57 +175,260 @@
 {q:"Onko materiaali riittävän puhdasta ja turvallista, jotta sillä olisi markkina-arvoa hyödyntämiskohteessa?",opts:["Kyllä","Osittain","Ei","Ei tietoa"],map:[w(10,9),w(10,5),w(10,-9),w(0,0)]},
 
     ];
-
 	
-	const results = [
-	// 1. REFUSE – Kieltäydy
-"Tämä strategia keskittyy tarpeen poistamiseen kokonaan. \
-Se tarkoittaa, että tuotetta tai materiaalia ei hankita lainkaan, vaan tilalle etsitään prosessimuutos, digitaalinen ratkaisu tai ratkaisu, joka poistaa tarpeen. \
-Voit edistää tätä esimerkiksi pilotoimalla vaihtoehtoisen toimintamallin, määrittämällä “no‑go”-kriteerit hankinnoille tai kokeilemalla palvelua tuotteen sijaan.",
-
-//2. RETHINK – Uudelleenarvioi
-"Tämä strategia ohjaa miettimään koko toiminnan logiikan uudelleen. \
-Tavoitteena on siirtyä omistamisesta käyttöön, jakamiseen tai korkeampaan käyttöasteeseen. \
-Voit edistää strategiaa esimerkiksi Product‑as‑a‑Service‑pilotilla, käyttöasteen seurannalla tai dataperusteisella päätöksenteolla.",
-
-//3. REDUCE – Vähennä
-"Strategia keskittyy kulutuksen ja materiaalivirtojen minimointiin. \
-Tavoitteena on tehdä vähemmällä: optimoida prosesseja, pienentää hukkaa ja tehostaa resurssien käyttöä. \
-Voit edistää tätä esimerkiksi materiaalihukan kartoituksella, prosessien virtaviivaistamisella tai vaihtoehtoisten vähäresurssisten ratkaisujen pilotoinnilla.",
-
-//4. REUSE – Käytä uudelleen
-"Tavoitteena on pidentää tuotteiden tai komponenttien elinkaarta sellaisenaan. \
-Tämä vähentää hankintoja ja nopeuttaa säästöjen syntymistä. \
-Voit edistää strategiaa esimerkiksi ottamalla käyttöön uudelleenkäyttöpisteitä, palautusjärjestelmän tai luomalla sisäiset käytäntöjä tuotteiden uudelleenkierrolle.",
-
-// 5. REPAIR – Korjaa
-"Strategia tähtää tuotteiden elinkaaren jatkamiseen korjaamalla. \
-Sen avulla vältetään uusien tuotteiden hankinta ja säästetään merkittävästi resursseja. \
-Voit edistää tätä esimerkiksi perustamalla korjauspalvelun, lisäämällä varaosien saatavuutta tai kouluttamalla henkilöstöä tekemään pieniä korjauksia itse.",
-
-//6. REFURBISH – Kunnosta
-"Tässä strategissa tuotteet palautetaan parempaan, lähes uudenveroiseen kuntoon. \
-Kunnostus voi sisältää puhdistusta, teknisiä päivityksiä tai osien vaihtamista. \
-Voit edistää strategiaa esimerkiksi luomalla vakioidun kunnostusprosessin, tekemällä pilottierän tai tarjoamalla kunnostetuille tuotteille laatutakuun.",
-
-//7. REMANUFACTURE – Uudelleenvalmista
-"Tavoitteena on purkaa tuote, hyödyntää käyttökelpoiset osat ja rakentaa niistä uusi, “kuten uusi” ‑tason tuote. \
-Tämä sopii erityisesti teknisiin tai moduulirakenteisiin tuotteisiin. \
-Voit edistää sitä esimerkiksi määrittämällä takaisinottosopimukset, standardoimalla purettavuuden tai seuraamalla prosessin laatumittareita.",
-
-//8. REPURPOSE – Uudelleenkäytä toiseen tarkoitukseen
-"Strategia hyödyntää tuotetta tai materiaalia uudessa käyttökohteessa. \
-Tämä voi avata uusia arvoverkostoja ja vähentää jätteen syntyä. \
-Voit edistää tätä tunnistamalla sivuvirtojen uudet käyttökohteet, arvioimalla turvallisuuden ja luomalla materiaalipassin jatkokäyttöä varten. ",
-
-//9. RECYCLE – Kierrätä
-"Kierrätysstrategia varmistaa, että materiaalit palautuvat takaisin kiertoon laadukkaasti. \
-Tämä tulee kyseeseen, kun tuotetta ei voida enää käyttää uudelleen tai kunnostaa. \
-Voit edistää strategiaa kehittämällä materiaalien erottelua, suosimalla yksimateriaaliratkaisuja ja rakentamalla yhteistyötä ammatillisten kierrätysoperaattorien kanssa.",
-
-//10. RECOVER – Hyödynnä energiana tai raaka-aineena
-"Tämä strategia keskittyy materiaalien hyödyntämiseen energiaksi tai muiksi resursseiksi silloin, kun uudelleenkäyttö, korjaus, kunnostus, uudelleenvalmistus ja kierrätys eivät ole enää mahdollisia. Voit edistää tätä esimerkiksi tekemällä energiahyödyntämisen esiselvityksen, kartoittamalla hyväksytyt vastaanottajat tai arvioimalla sivuvirtojen turvallisuuden ja soveltuvuuden energiakäyttöön."
+	const strategyDetails = [
+	{
+	code: "R0",
+	name: "Kieltäytyminen (Refuse)",
+	businessModel: "Resurssitehokkuus ja tarpeen poistaminen",
+	description:
+	"Strategia keskittyy tarpeen poistamiseen kokonaan. Tuotetta, materiaalia tai toimintoa ei hankita lainkaan, vaan tarve ratkaistaan toisella tavalla.",
+	businessPotential:
+	"Suurin hyöty syntyy vältetyistä kustannuksista. Yritys vähentää hankintoja, materiaalivirtoja, varastointia ja ylläpitokuluja.",
+	benefits: [
+	"Suorat kustannussäästöt",
+	"Vähemmän materiaali- ja energiankulutusta",
+	"Yksinkertaisemmat prosessit",
+	"Pienempi hiilijalanjälki"
+	],
+	examples: [
+	"Digitaalinen dokumentti paperitulosteen sijaan",
+	"Palvelu tuotteen sijaan",
+	"Tarpeettoman hankinnan poistaminen"
+	],
+	nextSteps: [
+	"Tunnista vältettävät hankinnat",
+	"Määritä no-go-kriteerit uusille hankinnoille",
+	"Pilotoi vaihtoehtoinen toimintamalli"
+	]
+	},
+	{
+	code: "R1",
+	name: "Uudelleenajattelu (Rethink)",
+	businessModel: "Jakamisalustat, Tuote palveluna",
+	description:
+	"Toiminnan logiikka suunnitellaan uudelleen. Painopiste siirtyy omistamisesta käyttöön, jakamiseen tai palvelullistamiseen.",
+	businessPotential:
+	"Mahdollistaa uusia palvelutuloja ja korkeamman käyttöasteen ilman vastaavaa investointien kasvua.",
+	benefits: [
+	"Uusia jatkuvia tulovirtoja",
+	"Parempi käyttöaste",
+	"Pienempi pääoman sitoutuminen",
+	"Pidemmät asiakassuhteet"
+	],
+	examples: [
+	"Vuokrauspalvelu",
+	"Product-as-a-Service",
+	"Yhteiskäyttömalli",
+	"Käyttöperusteinen laskutus"
+	],
+	nextSteps: [
+	"Mittaa käyttöastetta",
+	"Kartoita palvelullistamisen mahdollisuudet",
+	"Toteuta pilotti valitulle asiakasryhmälle"
+	]
+	},
+	{
+	code: "R2",
+	name: "Vähentäminen (Reduce)",
+	businessModel: "Resurssitehokkuus",
+	description:
+	"Kulutusta, materiaalivirtoja, energiaa ja hukkaa vähennetään säilyttäen sama tai parempi lopputulos.",
+	businessPotential:
+	"Nopeimmat taloudelliset hyödyt syntyvät usein juuri vähentämisestä.",
+	benefits: [
+	"Pienemmät materiaalikustannukset",
+	"Pienemmät energiakustannukset",
+	"Parempi tuottavuus",
+	"Vähemmän jätettä"
+	],
+	examples: [
+	"Pakkausmateriaalin vähentäminen",
+	"Prosessien optimointi",
+	"Energiankulutuksen pienentäminen"
+	],
+	nextSteps: [
+	"Tee materiaalihukkakartoitus",
+	"Analysoi energiankulutus",
+	"Tunnista suurimmat kustannusajurit"
+	]
+	},
+	{
+	code: "R3",
+	name: "Uudelleenkäyttö (Reuse)",
+	businessModel: "Tuotteen elinkaaren pidentäminen",
+	description:
+	"Tuotetta käytetään uudelleen sellaisenaan alkuperäisessä käyttötarkoituksessa.",
+	businessPotential:
+	"Pidentää tuotteiden arvonmuodostusta ja vähentää uusien hankintojen tarvetta.",
+	benefits: [
+	"Pienemmät hankintakulut",
+	"Parempi resurssitehokkuus",
+	"Nopeat säästöt",
+	"Pienemmät ympäristövaikutukset"
+	],
+	examples: [
+	"Palautusjärjestelmät",
+	"Sisäinen uudelleenkäyttö",
+	"Käytettyjen tuotteiden jälleenmyynti"
+	],
+	nextSteps: [
+	"Luo palautusprosessi",
+	"Määritä uudelleenkäytön kriteerit",
+	"Kartoita uudelleenkäyttömarkkinat"
+	]
+	},
+	{
+	code: "R4",
+	name: "Korjaaminen (Repair)",
+	businessModel: "Tuotteen elinkaaren pidentäminen",
+	description:
+	"Tuotteen käyttöikää pidennetään korjaamalla vialliset osat tai toiminnot.",
+	businessPotential:
+	"Korjaaminen voi olla huomattavasti edullisempaa kuin uuden hankinta ja mahdollistaa uusia palvelutuloja.",
+	benefits: [
+	"Pidempi käyttöikä",
+	"Pienemmät investointitarpeet",
+	"Huoltopalveluiden liikevaihto",
+	"Parempi asiakasuskollisuus"
+	],
+	examples: [
+	"Korjauspalvelut",
+	"Varaosamyynti",
+	"Ennakoiva huolto"
+	],
+	nextSteps: [
+	"Paranna varaosien saatavuutta",
+	"Määritä huoltoprosessi",
+	"Arvioi korjaamisen kannattavuus"
+	]
+	},
+	{
+	code: "R5",
+	name: "Kunnostaminen (Refurbish)",
+	businessModel: "Tuotteen elinkaaren pidentäminen",
+	description:
+	"Vanha tuote palautetaan parempaan tai lähes uudenveroiseen kuntoon.",
+	businessPotential:
+	"Kunnostus voi luoda uuden tuoteryhmän ja avata uusia markkinoita kustannustehokkaasti.",
+	benefits: [
+	"Uusia myyntituloja",
+	"Korkeampi tuotteen arvo",
+	"Pienemmät materiaalikustannukset",
+	"Parempi resurssien hyödyntäminen"
+	],
+	examples: [
+	"Kunnostetut elektroniikkatuotteet",
+	"Teollisuuslaitteiden päivitys",
+	"Laatutakuullinen refurbished-tuote"
+	],
+	nextSteps: [
+	"Vakioi kunnostusprosessi",
+	"Kehitä laatukriteerit",
+	"Testaa markkinakysyntä"
+	]
+	},
+	{
+	code: "R6",
+	name: "Uudelleenvalmistus (Remanufacture)",
+	businessModel: "Tuotteen elinkaaren pidentäminen",
+	description:
+	"Tuote puretaan ja käyttökelpoisista osista valmistetaan uusi, alkuperäistä vastaava tuote.",
+	businessPotential:
+	"Mahdollistaa korkean arvon säilyttämisen samalla kun materiaalikustannukset pienenevät.",
+	benefits: [
+	"Korkeampi materiaalien arvoaste",
+	"Pienemmät raaka-ainekustannukset",
+	"Uudet liiketoimintamahdollisuudet",
+	"Parempi toimitusvarmuus"
+	],
+	examples: [
+	"Moottorien uudelleenvalmistus",
+	"Teollisuuskomponenttien uudelleenvalmistus"
+	],
+	nextSteps: [
+	"Luo takaisinottojärjestelmä",
+	"Standardoi purettavuus",
+	"Mittaa laatua ja kannattavuutta"
+	]
+	},
+	{
+	code: "R7",
+	name: "Uusiokäyttö (Repurpose)",
+	businessModel: "Resurssien talteenotto",
+	description:
+	"Tuote tai materiaali saa kokonaan uuden käyttötarkoituksen.",
+	businessPotential:
+	"Voi synnyttää täysin uusia markkinoita sivuvirroille ja käytöstä poistuville tuotteille.",
+	benefits: [
+	"Uusia tulovirtoja",
+	"Vähemmän jätettä",
+	"Uusia asiakasryhmiä",
+	"Parempi materiaalien hyödyntäminen"
+	],
+	examples: [
+	"Sivuvirtojen hyödyntäminen",
+	"Rakennusmateriaalien uusiokäyttö",
+	"Tekstiilien uusi käyttökohde"
+	],
+	nextSteps: [
+	"Kartoita mahdolliset hyödyntäjät",
+	"Arvioi turvallisuus ja laatu",
+	"Selvitä materiaalin markkina-arvo"
+	]
+	},
+	{
+	code: "R8",
+	name: "Kierrätys (Recycle)",
+	businessModel: "Kiertävät raaka-aineet",
+	description:
+	"Materiaalit palautetaan uusien tuotteiden raaka-aineiksi.",
+	businessPotential:
+	"Vähentää riippuvuutta neitseellisistä materiaaleista ja voi luoda arvoa materiaalivirroista.",
+	benefits: [
+	"Materiaalien arvon säilyminen",
+	"Pienemmät jätekustannukset",
+	"Mahdolliset materiaalitulot",
+	"Parempi materiaaliturva"
+	],
+	examples: [
+	"Muovin kierrätys",
+	"Metallien talteenotto",
+	"Suljetut materiaalikierrot"
+	],
+	nextSteps: [
+	"Paranna lajittelua",
+	"Tunnista kierrätyskumppanit",
+	"Mittaa materiaalien arvo"
+	]
+	},
+	{
+	code: "R9",
+	name: "Energian talteenotto (Recover)",
+	businessModel: "Resurssien talteenotto",
+	description:
+	"Materiaali tai sivuvirta hyödynnetään energiana silloin, kun korkeammat kiertotalousstrategiat eivät ole mahdollisia.",
+	businessPotential:
+	"Voi pienentää jätehuoltokustannuksia ja tuottaa lisäarvoa muuten hyödyntämättä jääville materiaaleille.",
+	benefits: [
+	"Pienemmät jätekustannukset",
+	"Energiahyöty",
+	"Sivuvirtojen hyödyntäminen",
+	"Parempi resurssitehokkuus"
+	],
+	examples: [
+	"Polttokelpoinen jäte",
+	"Biokaasutuotanto",
+	"Energiaksi hyödynnettävät sivuvirrat"
+	],
+	nextSteps: [
+	"Selvitä vastaanottajat",
+	"Arvioi energia-arvo",
+	"Varmista materiaalin soveltuvuus"
+	]
+	}
 	];
+
 
     const questions = [...baseQuestions ];
 
@@ -320,13 +522,38 @@ Voit edistää strategiaa kehittämällä materiaalien erottelua, suosimalla yks
       const best = Rs[sorted[0]?.i ?? 0];
       const alt1 = Rs[sorted[1]?.i ?? 0];
       const alt2 = Rs[sorted[2]?.i ?? 0];
+	  
+	  const strategy = strategyDetails[sorted[0]?.i ?? 0];
+	  
       document.getElementById('result').innerHTML = `
-        <div class="result">
-          <h3>Suositelluin strategia: ${best}</h3>
-          <p>Tämä vaikuttaa parhaimmalta vaihtoehdolta kiertotalouden näkökulmasta. ${results[sorted[0]?.i ?? 0]}</p>
-          <p><b>Voisit myös harkita:</b> ${alt1} ja ${alt2}</p>
-          <button onclick="openCalculator('${best}')">Avaa kannattavuuslaskuri</button>
-        </div>`;
+<h2>Suositeltu strategia</h2>
+
+<h3>${strategy.code} – ${strategy.name}</h3>
+
+<p>${strategy.description}</p>
+
+<p><strong>Liiketoimintapotentiaali:</strong>
+${strategy.businessPotential}</p>
+
+<h4>Keskeiset hyödyt</h4>
+
+<ul>
+${strategy.benefits.map(b => `<li>${b}</li>`).join("")}
+</ul>
+
+<h4>Esimerkit</h4>
+
+<ul>
+${strategy.examples.map(b => `<li>${b}</li>`).join("")}
+</ul>
+
+<h4>Seuraavat askeleet</h4>
+
+<ul>
+${strategy.nextSteps.map(b => `<li>${b}</li>`).join("")}
+</ul>
+
+`;
     }
 
     function showPopup(){
