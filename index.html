@@ -6,6 +6,7 @@
   <title>9R Kiertotaloustyökalu</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     :root{--bg:#f7f9fb;--fg:#1f2937;--card:#fff;--muted:#6b7280;--accent:#0ea5e9;--accent2:#111827;
           --green:#22c55e;--yellow:#f59e0b;--red:#ef4444;--gray:#9ca3af}
@@ -558,8 +559,13 @@ ${strategy.nextSteps.map(b => `<li>${b}</li>`).join("")}
 
     function showPopup(){
       const sorted = scores.map((v,i) => ({v,i})).sort((a,b) => b.v - a.v);
-      const best = Rs[sorted[0]?.i ?? 0];
-      alert('Suositeltava strategia: ' + best);
+      const best = strategyDetails[sorted[0]?.i ?? 0].code + " " + strategyDetails[sorted[0]?.i ?? 0].name;
+	  Swal.fire({
+		  icon: 'success',
+		  title: 'Suositeltu strategia',
+		  text: best,
+		  confirmButtonText: 'OK'
+	  });
     }
 
     function openCalculator(strategy){
