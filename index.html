@@ -546,10 +546,10 @@
     function showResult(){
       const sorted = scores.map((v,i) => ({v,i})).sort((a,b) => b.v - a.v);
       const best = Rs[sorted[0]?.i ?? 0];
-      const alt1 = Rs[sorted[1]?.i ?? 0];
-      const alt2 = Rs[sorted[2]?.i ?? 0];
-	  
+      
 	  const strategy = strategyDetails[sorted[0]?.i ?? 0];
+	  const alt1 = strategyDetails[sorted[1]?.i ?? 0];
+      const alt2 = strategyDetails[sorted[2]?.i ?? 0];
 	  
       document.getElementById('result').innerHTML = `
 <h2>Suositeltu strategia</h2>
@@ -579,6 +579,10 @@ ${strategy.examples.map(b => `<li>${b}</li>`).join("")}
 ${strategy.nextSteps.map(b => `<li>${b}</li>`).join("")}
 </ul>
 
+<p><strong>Voisit myös harkita:</strong> ${alt1.code} – ${alt1.name} ja ${alt2.code} – ${alt2.name}</p>
+
+
+<button onclick="openCalculator('${best}')">Avaa kannattavuuslaskuri</button>
 `;
     }
 
